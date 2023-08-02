@@ -10,5 +10,6 @@ This is a simple task management project build in laravel framework.
 - Run `php artisan passport:install`
 - Run `php artisan queue:listen`
 - Give the mail credentials in .env
+- After fresh or refresh the database Run `php artisan passport:install`
 
 
