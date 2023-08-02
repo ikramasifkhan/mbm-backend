@@ -7,7 +7,7 @@ This is a simple task management project build in laravel framework.
 - make database and named it `mbm-group`.
 - Run `php artisan migrate`
 - Run `php artisan db:seed`
-- - Run `php artisan passport:install`
+- Run `php artisan passport:install`
 - Run `php artisan queue:listen`
 - Give the mail credentials in .env
 
