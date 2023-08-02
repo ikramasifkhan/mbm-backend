@@ -26,7 +26,7 @@ class TaskFactory extends Factory
             'created_for'=>$status !== 'open'? User::all()->random()->id : null,
             'description'=> $this->faker->realText(150, 2),
             'deadline'=>$this->faker->date(),
-            'status'=>'open'
+            'status'=>$status
         ];
     }
 }
