@@ -19,10 +19,11 @@ class TaskFactory extends Factory
     public function definition(): array
     {
         $this->title = $this->title+1;
+        $status = $this->faker->randomElement(['open', 'in-progress', 'done']);
         return [
             'title'=>'Task-'.$this->title,
             'created_by'=>User::all()->random()->id,
-            'created_for'=>User::all()->random()->id,
+            'created_for'=>$status !== 'open'? User::all()->random()->id : null,
             'description'=> $this->faker->realText(150, 2),
             'deadline'=>$this->faker->date(),
             'status'=>'open'
