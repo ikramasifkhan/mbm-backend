@@ -1,0 +1,14 @@
+{
+    "apps": [
+        {
+            "name": "ecommerce-backend-server",
+            "script": "artisan",
+            "exec_mode": "fork",
+            "interpreter": "php",
+            "args": [
+                "serve",
+                "--port=8000"
+            ]
+        }
+    ]
+}
